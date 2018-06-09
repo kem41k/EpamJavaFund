@@ -24,7 +24,7 @@ public class Sequence {
 
                 input = Double.parseDouble(bufferRead.readLine());
                 if (input > 0 && input < 1)
-                    break;
+                    return input;
                 else
                     System.out.println("Wrong input! Epsilon should be from (0;1) interval!\n");
             }
@@ -35,6 +35,5 @@ public class Sequence {
                 System.out.println("Wrong input! Epsilon should be a double value!\n");
             }
         }
-        return input;
     }
 }
