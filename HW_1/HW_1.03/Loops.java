@@ -38,14 +38,12 @@ public class Loops {
         System.out.printf("%15.6f | %15.6f\n", b, Math.tan(2 * b) - 3);
     }
 
-    public static double readFromConsole(String variableName){
-        double input = 0.0;
+    private static double readFromConsole(String variableName){
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         while (true) {
             try {
                 System.out.print(variableName + " = ");
-                input = Double.parseDouble(reader.readLine());
-                return input;
+                return Double.parseDouble(reader.readLine());
             } catch (IOException ex) {
                 ex.printStackTrace();
             } catch (NumberFormatException numEx) {

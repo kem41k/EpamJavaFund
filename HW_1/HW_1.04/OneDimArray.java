@@ -6,14 +6,13 @@ import java.util.Arrays;
 
 public class OneDimArray {
     public static void main(String[] args) {
-        int n = getN();
-        double[] array = getRandomArray(2 * n);
+        double[] array = getRandomArray(2 * getN());
         double[] arrayOfSums = getArrayOfSums(array);
         Arrays.sort(arrayOfSums);
         System.out.println("\nMax = " + arrayOfSums[arrayOfSums.length - 1]);
     }
 
-    public static int getN(){
+    private static int getN(){
         int n;
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         while (true){
@@ -23,17 +22,17 @@ public class OneDimArray {
                 if (n > 0)
                     return n;
                 else
-                    System.out.println("Wrong input! N should be positive integer!\n");
+                    throw new NumberFormatException();
                 //break;
             } catch (IOException ex){
                 ex.printStackTrace();
             } catch (NumberFormatException numEx){
-                System.out.println("Wrong input! N should be positive integer!\n");
+                System.out.println("Wrong input! N should be a positive integer!\n");
             }
         }
     }
 
-    public static double[] getRandomArray(int n){
+    private static double[] getRandomArray(int n){
         System.out.println("\nArray");
         double[] array = new double[n];
         for (int i = 0; i < n; i++){
@@ -43,7 +42,7 @@ public class OneDimArray {
         return array;
     }
 
-    public static double[] getArrayOfSums(double[] baseArray){
+    private static double[] getArrayOfSums(double[] baseArray){
         System.out.println("\nArray of sums");
         double array[] = new double[baseArray.length / 2];
         for (int i = 0; i < baseArray.length / 2; i++){

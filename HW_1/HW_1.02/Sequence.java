@@ -14,14 +14,13 @@ public class Sequence {
         System.out.println("Answer: n = " + --n);
     }
 
-    public static double getEpsilon() {
+    private static double getEpsilon() {
         double input = -1;
         BufferedReader bufferRead = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Enter a double value from (0;1) interval:");
         while (true){
             try {
                 System.out.print("eps = ");
-
                 input = Double.parseDouble(bufferRead.readLine());
                 if (input > 0 && input < 1)
                     return input;
