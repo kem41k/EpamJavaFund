@@ -28,7 +28,7 @@ public class Sequence {
                     System.out.println("Wrong input! Epsilon should be from (0;1) interval!\n");
             }
             catch(IOException ex) {
-                ex.printStackTrace();
+                System.out.println("Wrong input! " + ex.getMessage());
             }
             catch (NumberFormatException numEx) {
                 System.out.println("Wrong input! Epsilon should be a double value!\n");

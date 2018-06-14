@@ -45,7 +45,7 @@ public class Loops {
                 System.out.print(variableName + " = ");
                 return Double.parseDouble(reader.readLine());
             } catch (IOException ex) {
-                ex.printStackTrace();
+                System.out.println("Wrong input! " + ex.getMessage());
             } catch (NumberFormatException numEx) {
                 System.out.println("Wrong input! Write a double value!");
             }

@@ -19,7 +19,7 @@ public class TwoDimArray {
                 else
                     return n;
             } catch (IOException ex){
-                ex.printStackTrace();
+                System.out.println("Wrong input! " + ex.getMessage());
             } catch (NumberFormatException numEx){
                 System.out.println("Wrong input! N should be a positive integer!\n");
             }
