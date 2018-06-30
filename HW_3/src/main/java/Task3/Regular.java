@@ -44,18 +44,11 @@ public class Regular {
         {
             int diff = Integer.parseInt(references[i]) - maxImageRef;
             System.out.println(Integer.parseInt(references[i]) + "-" + maxImageRef + "=" + diff);
-            if (diff == 1) {
+            if (diff == 1)
                 maxImageRef++;
-                System.out.println("Change max to " + maxImageRef);
-            }
-            else if (diff > 1) {
-                System.out.println("Diff > 1");
+            else if (diff > 1)
                 return false;
-            }
-            else
-                System.out.println("OK");
         }
         return true;
-        //return false;
     }
 }
