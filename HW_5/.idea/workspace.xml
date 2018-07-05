@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="769d53cc-465b-45bf-9b4a-928917b0f90f" name="Default" comment="5.2 is done">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Task2/PropReaderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Task2/PropReaderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Task1/FileSystem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Task1/FileSystem.class" afterDir="false" />
-    </list>
+    <list default="true" id="769d53cc-465b-45bf-9b4a-928917b0f90f" name="Default" comment="5.2 is done" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
