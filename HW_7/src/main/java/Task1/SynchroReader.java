@@ -80,7 +80,7 @@ public class SynchroReader {
     // Synchronization with java.util.concurrent
     private static Lock lock2 = new ReentrantLock();
 
-    public static List<Transaction> getTransactionsWithoutLock(String accountNumber, boolean option) {
+    public static List<Transaction> getTransactionsWithConcurrent(String accountNumber, boolean option) {
         List<Transaction> result = null;
         lock2.lock();
         result = getTransactions(accountNumber, option);

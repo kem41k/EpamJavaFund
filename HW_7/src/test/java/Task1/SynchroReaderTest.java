@@ -46,8 +46,8 @@ class SynchroReaderTest {
     @Test
     @SneakyThrows
     void Variant2() {
-        Runnable task1 = () -> { actualReceipts = SynchroReader.getTransactionsWithLock("0123456789", true);};
-        Runnable task2 = () -> { actualExpences = SynchroReader.getTransactionsWithLock("0123456789", false);};
+        Runnable task1 = () -> { actualReceipts = SynchroReader.getTransactionsWithConcurrent("0123456789", true);};
+        Runnable task2 = () -> { actualExpences = SynchroReader.getTransactionsWithConcurrent("0123456789", false);};
 
         Thread thread1 = new Thread(task1);
         Thread thread2 = new Thread(task2);
