@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transactions>
+    <transaction id="1">
+        <from>0123456789</from>
+        <to>1234567890</to>
+        <amount>$100.00</amount>
+        <date>2018-07-08 11:22:54</date>
+    </transaction>
+    <transaction id="2">
+        <from>0123456789</from>
+        <to>2345678901</to>
+        <amount>$250.50</amount>
+        <date>2018-07-08 12:32:04</date>
+    </transaction>
+    <transaction id="3">
+        <from>4567890123</from>
+        <to>0123456789</to>
+        <amount>$0.17</amount>
+        <date>2018-07-08 17:09:33</date>
+    </transaction>
+    <transaction id="4">
+        <from>5678901234</from>
+        <to>0123456789</to>
+        <amount>$1,456.78</amount>
+        <date>2018-07-08 18:22:54</date>
+    </transaction>
+    <transaction id="5">
+        <from>0123456789</from>
+        <to>0123456788</to>
+        <amount>$10.15</amount>
+        <date>2018-07-08 19:02:41</date>
+    </transaction>
+</transactions>

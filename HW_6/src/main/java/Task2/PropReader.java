@@ -1,7 +1,6 @@
 package Task2;
 
 import lombok.Cleanup;
-
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
